@@ -23,3 +23,8 @@ wp-config.php
 
 # Optionale Plugin-Verzeichnisse, die temporäre Daten erzeugen
 /wp-content/*-cache.php
+
+# Obsidian-Planungsdateien blockieren
+.obsidian/
+*.md
+!README.md
