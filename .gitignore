@@ -2,3 +2,24 @@
 .DS_Store
 .vscode/
 node_modules/
+
+# WordPress Core-Dateien ignorieren (Werden vom Server/Plesk verwaltet)
+/wp-admin/
+/wp-includes/
+/*.php
+!/wp-content/
+
+# Wichtige Konfigurationen und Server-Dateien blockieren (Sicherheit!)
+wp-config.php
+.htaccess
+.user.ini
+*.log
+
+# Dynamische Medien-Uploads blockieren (Bilder gehören nicht ins Git)
+/wp-content/uploads/
+/wp-content/blogs.dir/
+/wp-content/upgrade/
+/wp-content/cache/
+
+# Optionale Plugin-Verzeichnisse, die temporäre Daten erzeugen
+/wp-content/*-cache.php
